@@ -1,3 +1,13 @@
 club_team_list
 
 hello
+
+
+
+<ul>
+{% for club in clubs %}
+	<li>
+		{{club.name}}		
+	</li>
+{% endfor %}
+</ul>
