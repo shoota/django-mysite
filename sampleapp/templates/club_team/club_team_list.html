@@ -1,9 +1,12 @@
-club_team_list
+{% load static %}
 
-hello
-
-
-
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+	<title></title>
+</head>
+<body>
 <ul>
 {% for club in clubs %}
 	<li>
@@ -11,3 +14,5 @@ hello
 	</li>
 {% endfor %}
 </ul>
+</body>
+</html>
