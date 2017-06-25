@@ -1,12 +1,6 @@
-{% load static %}
+{% extends 'club_team/base.html' %}
 
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
-	<title></title>
-</head>
-<body>
+{% block content %}
 <ul>
 {% for club in clubs %}
 	<li>
@@ -14,5 +8,4 @@
 	</li>
 {% endfor %}
 </ul>
-</body>
-</html>
+{% endblock content %}
