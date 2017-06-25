@@ -1,0 +1,13 @@
+{% extends 'club_team/base.html' %}
+
+{%block title%}クラブ詳細{% endblock %}
+
+{% block content %}
+
+<div>
+	<h2>{{club.name}}</h2>
+	<p>location : {{club.location}}</p>
+	<p>registered : {{club.created_date}}</p>
+</div>
+
+{% endblock content %}
