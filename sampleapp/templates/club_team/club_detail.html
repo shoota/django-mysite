@@ -8,6 +8,7 @@
 	<h2>{{club.name}}</h2>
 	<p>location : {{club.location}}</p>
 	<p>registered : {{club.created_date}}</p>
+	<a href="{% url 'club_edit' pk=club.pk %}">Edit</a>
 </div>
 
 {% endblock content %}
